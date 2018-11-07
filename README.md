@@ -12,11 +12,11 @@ La Tele recibe sus ordenes (on, off, vol+, vol-) desde un emisor IR basado en No
 
 - EventGhost en PC. Configuracion interactiva, que se guarda con el backup de Salon en zeta.upv.es (G/SYNC/comun/eventGhost.xml). Usa el emisor IR para dar ordenes a la tele.
 
-- Unified Remote ("UR") en PC. Configuración editando su configuración, que se guarda con el backup de Salon en zeta.upv.es (C/ProgramData/Unified Remote/Remotes/Custom/Salon). Usa el emisor IR para dar ordenes a la tele.
+- Unified Remote ("UR") en PC, opcional, necesario para usar la app. UR. Configuración editando su configuración, que se guarda con el backup de Salon en zeta.upv.es (C/ProgramData/Unified Remote/Remotes/Custom/Salon). Usa el emisor IR para dar ordenes a la tele.
 
-- App. movil "Unified Remote".
+- App. movil "Unified Remote" opcional.
 
-- App. movil "Automate" OPCIONAL.
+- App. movil "Automate" aún más opcional, para mejorar el uso de UR. Recomendable root en Android.
 
 ## Tipos de mandos en el PC
 
