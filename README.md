@@ -30,11 +30,9 @@ Como el Flymouse blanco o el teclado con touchpad. EventGhost detecta que el ord
 
 ### App. movil
 
-La app. UR envía las ordenes al servidor UR en el PC. 
+Despierta al PC usando Wake on LAN, enciende/apaga la tele hablando directamente con el emisor IR, y da otras ordenes a traves del servidor UR en el PC. 
 
-Con la ayuda de la app. opcional Automate puede encender todo con un solo botón. 
-
-Sin Automate, hay que pulsar varios botones para encender PC+TV.
+Con la ayuda de la app. opcional Automate puede encender todo con un solo botón. Sin Automate, hay que pulsar varios botones para encender PC+TV.
 
 ## Software multimedia
 
