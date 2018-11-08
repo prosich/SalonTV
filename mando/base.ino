@@ -2,21 +2,14 @@
 #include <ESP8266WiFiMulti.h>
 #include <ESP8266HTTPClient.h>
 #include <ESP8266httpUpdate.h>
-#include <WiFiUDP.h>
 #include <Syslog.h>
+#include "wifikeys.h"
 
 /*
  * Conecta a WiFi
  * Configura syslog remoto.
  * Actualiza soft. si es necesario.
  */
-
-WifiAPEntry wifis[] = {
-    {"LGG3","password"},
-    {"METEO","password"},    
-    {"RM24S","eb0ub011"}, 
-    {"RMUP","aabbccddee"} 
-};
 
 extern char *app;
 extern char *ver;
@@ -56,4 +49,3 @@ bool wifota() {
   Serial.println("Fallo de conexion"); 
   return(false);
 }
-
