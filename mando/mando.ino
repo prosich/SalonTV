@@ -2,8 +2,6 @@
 #include <ESP8266WiFi.h>
 #include <ESP8266WebServer.h>
 #include <ESP8266HTTPClient.h>
-#include <WiFiUDP.h>
-#include <WakeOnLan.h>
 #include <Syslog.h>
 
 IRsend irsend(D1);
@@ -34,14 +32,11 @@ void wmc()     { evghost("wmc");    }
 void duerme()  { evghost("duerme"); }
 void monon()   { evghost("monon");  }
 
-void wol() {
-  WiFiUDP UDP;
-  IPAddress computer_ip(255,255,255,255); 
-  byte mac[]={0x00,0x1E,0x0B,0xB4,0xBA,0xE9}; // SALON
-  WakeOnLan::sendWOL(computer_ip,UDP,mac,sizeof mac);
+void on() { 
+  byte mac[]={0x00,0x1E,0x0B,0xB4,0xBA,0xE9};
+  wakeonlan(mac);
+  tvon(); 
 }
-
-void on() { wol(); tvon(); }
 
 void setup() { 
   inicia();
@@ -72,5 +67,3 @@ void act() {
   if (cmd=="sleep")   { duerme();     delay(2e1); tvoff(); } else
   if (cmd=="reset")   { delay(5e3); ESP.reset(); } 
 }
-
-

@@ -3,7 +3,7 @@
 #include <ESP8266HTTPClient.h>
 #include <ESP8266httpUpdate.h>
 #include <Syslog.h>
-#include "wifikeys.h"
+#include "wifikeys.h" // contiene WifiAPEntry wifis[]
 
 /*
  * Conecta a WiFi
