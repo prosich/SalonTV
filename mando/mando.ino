@@ -1,17 +1,13 @@
+#include <Espini.h>
 #include <IRsend.h>
-#include <ESP8266WiFi.h>
 #include <ESP8266WebServer.h>
 #include <ESP8266HTTPClient.h>
-#include <Syslog.h>
+
+#include "otaid.h"
 
 IRsend irsend(D1);
 
-// Id para OTA
-char *app="mando";
-extern char *ver;
-
 ESP8266WebServer server(80);
-extern Syslog syslog;
 HTTPClient http;
 
 // Orden IR a la tele
@@ -39,8 +35,8 @@ void on() {
 }
 
 void setup() { 
-  inicia();
-  syslog.log("Listo!");
+  Espini cosa(wifis(),app,ver,"ota.rosich.es","syslog.rosich.es");
+  cosa.log("Listo!");
   irsend.begin();
   server.on("/act",act);
   server.on("/",act);
