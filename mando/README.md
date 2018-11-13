@@ -1,15 +1,8 @@
 ** Mando
 
-- Para NodeMCU
+- Para NodeMCU con LED IR en pin D1, amplificado con alimentación desde USB 5v.
 
-  - añadir en preferences/board manager: 
-    http://arduino.esp8266.com/stable/package_esp8266comi_index.json
-  - Seleccionar tools/board ESP8266 NodeMCU 1.0
-
-- Depende de librerias:
-
-  - IRremoteESP8266
-  - prosich://github.com/prosich/Espini
+- Compilar con Visual Studio Code + extensión PlatformIO
 
 ** BUGS
 
