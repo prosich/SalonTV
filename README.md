@@ -32,7 +32,7 @@ Como el Flymouse blanco o el teclado con touchpad. EventGhost detecta que el ord
 
 Despierta al PC usando Wake on LAN, enciende/apaga la tele hablando directamente con el emisor IR, y da otras ordenes a traves del servidor UR en el PC. 
 
-Con la ayuda de la app. opcional Automate puede encender todo con un solo botón. Sin Automate, hay que pulsar varios botones para encender PC+TV.
+Con la ayuda de la app. opcional Automate puede encender todo con un solo botón. Sin Automate, hay que pulsar al menos dos botones para encender PC+TV. Ademas, con Automate (y root en android), puede cerrar la app al tiempo que la tele y el PC. Mucho más bonito, aunque seguramente no vale la pena.
 
 ## Software multimedia
 
