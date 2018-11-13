@@ -1,5 +1,7 @@
 ** Mando
 
+- Rama abandonada de la versión para compilar en el IDE Arduino.
+
 - Para NodeMCU
 
   - añadir en preferences/board manager: 
